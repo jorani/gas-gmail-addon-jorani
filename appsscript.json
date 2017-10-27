@@ -1,0 +1,36 @@
+{
+  "timeZone": "Pacific/Pago_Pago",
+  "dependencies": {
+    "libraries": [{
+      "userSymbol": "OAuth2",
+      "libraryId": "1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF",
+      "version": "23"
+    }]
+  },
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/gmail.readonly",
+    "https://www.googleapis.com/auth/gmail.addons.current.message.readonly",
+    "https://www.googleapis.com/auth/script.storage",
+    "https://www.googleapis.com/auth/script.external_request"
+  ],
+  "urlFetchWhitelist": [
+    "https://demo.jorani.org/api/"
+  ],
+  "gmail": {
+    "name": "Jorani",
+    "logoUrl": "https://github.com/bbalet/jorani/raw/master/assets/images/logo.png",
+    "contextualTriggers": [{
+      "unconditional": {
+      },
+      "onTriggerFunction": "buildAddOn"
+    }],
+    "primaryColor": "#3097d1",
+    "secondaryColor": "#f5811e",
+    "openLinkUrlPrefixes": [
+      "https://mail.google.com/",
+      "https://demo.jorani.org/"
+    ],
+    "version": "TRUSTED_TESTER_V2"
+  }
+}
